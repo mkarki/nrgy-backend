@@ -1,4 +1,4 @@
-"""AI-powered analysis and report generation using OpenAI GPT-4o-mini."""
+"""AI-powered analysis and report generation for Sungy Energy Platform."""
 
 from openai import OpenAI
 from config import settings
