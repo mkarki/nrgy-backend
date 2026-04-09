@@ -19,10 +19,10 @@ from services.ai_service import (
 MARKPRESSO_URL = "https://markpresso.pro/api/v1/convert"
 
 MARKPRESSO_STYLE = {
-    "primaryColor": "#F59E0B",
+    "primaryColor": "#7CB342",
     "fontHeading": "Arial",
     "fontBody": "Arial",
-    "companyName": "NRGy by Alpha",
+    "companyName": "Sungy SPA",
 }
 
 
@@ -42,7 +42,7 @@ def _build_report_markdown(req) -> str:
     sections.append(f"**{site['name']}**  ")
     sections.append(f"{site['address']}  ")
     sections.append(f"Date du rapport : {now}  ")
-    sections.append(f"Redige par **NRGy by Alpha**\n")
+    sections.append(f"Redige par **Sungy SPA**\n")
     sections.append("---\n")
 
     # --- AI Executive Summary ---

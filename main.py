@@ -9,7 +9,7 @@ from routers import dashboard, consumption, production, sites, reports, ai
 from routers.mock_apis import comwatt, sma
 
 app = FastAPI(
-    title="NRGy by Alpha API",
+    title="Sungy Energy Platform API",
     description="POC - Dashboard énergétique, monitoring solaire et génération de rapports IA",
     version="1.0.0",
 )
@@ -35,7 +35,7 @@ app.include_router(sma.router)
 @app.get("/")
 def root():
     return {
-        "name": "NRGy by Alpha",
+        "name": "Sungy Energy Platform",
         "version": "1.0.0",
         "docs": "/docs",
         "endpoints": {
