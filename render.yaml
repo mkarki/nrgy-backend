@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nrgy-backend
+    runtime: docker
+    repo: https://github.com/mkarki/nrgy-backend
+    branch: main
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
